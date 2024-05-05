@@ -64,7 +64,7 @@ def main(args):
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.float16,
+        bnb_4bit_compute_dtype="float16",bnb_4bit_use_double_quant=True, 
     )
     lora_config = LoraConfig(
         r=8,

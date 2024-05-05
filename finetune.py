@@ -111,7 +111,7 @@ def main(args):
             learning_rate=args.learning_rate,
             lr_scheduler_type=args.lr_scheduler_type,
             weight_decay=args.weight_decay,
-            bf16=args.bf16,
+            fp16=True,
             logging_strategy="steps",
             logging_steps=10,
             output_dir=args.output_dir,
